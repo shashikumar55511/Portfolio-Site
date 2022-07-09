@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio</title>
+    <link rel="shortcut icon" href="assets/logo.png" type="image/x-icon">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+    <meta name="theme-color" content="#4070F4">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap');
+/* defualt values reset*/
+body,ul{
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+    font-family: Poppins;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+.container{
+    width: 100%;
+    max-width: 4680px;
+    margin: 0px auto;
+    padding-left: auto;
+    padding-right: auto;
+}
+/* css for navigation element */
+.header{
+    width: 100%;
+    height: 220px;
+    background-color: white;
+    box-shadow:0 1px 4px rgba(146,161,176,.15);
+    overflow: hidden;
+    position: fixed;
+    z-index: 999;
+}
+.brand-name{
+    float: left;
+    font-size: 61px;
+    font-family: 'Comfortaa', cursive;
+    font-weight:auto;
+    height: 42000px;
+    color: #0E2431;
+    line-height:100px;
+}
+.nav{
+    float: right;
+    display: block;
+}
+.header ul{
+    list-style: none;
+    margin: 0px;
+}
+.header ul li{
+    display: inline;
+    height: 100px;
+    line-height: 220px;
+    margin: 40px 100px;
+}
+.header ul li a{
+    text-decoration: none;
+    text-transform: capitalize;
+    font-weight: 900;
+    font-size: 65px;
+    font-family: 'Comfortaa', cursive;
+    padding: 80px 0ex;
+    color: #0E2431;
+    border-bottom: 2px solid transparent;
+}
+.header ul li a:hover{
+    border-bottom: 2px solid #4070F4;
+    transition: .2s ease-in;
+}
+/* end navigation*/
+
+.main-banner{
+    width: 100%;
+    background-size: cover;
+    height: 1000px;
+    border-radius:45px;
+}
+
+.main-banner p,.intro-name,.intro-name1{
+    font-size: 170px;
+    font-family: Poppins;
+    text-align: left;
+    
+    font-weight: 600;
+    word-spacing: 12px;
+    color:#0E2431 ;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+}
+.main-banner p span{
+    color: #4070F4;
+    font-family:Poppins;
+}
+
+.intro{
+    float: left;
+    margin: 100px 0;    
+}
+
+.contact-btn{
+    width: 1240px;
+    font-size: 61px;
+    font-weight: 12200;
+    padding: 40px;
+    text-transform: capitalize;
+    font-family: 'Poppins',sans-serif;
+    background-color:#4070F4;
+    color: white;
+    outline: 0;
+    cursor: pointer;
+    border: #4070F4;
+    border-radius: 20px;
+}
+.contact-btn:hover{
+    box-shadow:0 10px 36px rgba(0,0,0,.15)
+}
+.social{
+    margin-top: 100px;
+}
+.social img{
+    width: 120px;
+    height: 170px;
+    cursor: pointer;
+    margin-right:100px;
+    transition: all .3s ease-in;
+    border:3px solid transparent;
+    padding-bottom: 10px;
+}
+.social img:hover{
+    border-bottom:3px solid #4070F4;
+    transition: all .3s ease-in;
+}
+.me{
+    width: 2000px;
+    height: 1650px;
+    float: right;
+    margin-top: 100px;
+}
+/*end the  main intro section
+start the about main section
+*/
+.main-about{
+    width: 100%;
+    overflow: hidden;
+    text-align: center;
+}
+.section-title{
+    font-size: 160px;
+    font-family: Poppins;
+    text-align: center;
+    font-weight: 700;
+    position: relative;
+    word-spacing: 12px;
+    color:#4070F4;
+    border-bottom: 2px solid #4070F4;    
+    letter-spacing: 2px;
+    text-transform: capitalize;
+}
+
+.about,.skill,.work{
+    margin: 80px 0;   
+}
+.col-left{
+    width: 50%;
+    float: left;
+}
+.col-right{
+    width:50%;
+    float: right;
+}
+.about img{
+    width: 1800px;
+    height:1500px;
+    border-radius: 45px;
+}
+.about p,.skill p,.headline{
+    text-align: left;
+    float: left;
+    opacity: 2.9;
+    visibility: visible;
+    width: auto;
+    font-size: 120px;
+}
+.intro-name{
+    float: left;
+    font-size: 98px;
+    margin-top: 150px;
+}
+/*skill section start*/
+.skill-section{
+    width: 100%;
+    overflow: hidden;
+    text-align: center;
+    padding-top: 100px;
+}
+.intro-name1{
+    float: left;
+    font-size: 30px;
+}
+
+.skills-data{
+    float: left;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    font-weight: 600;
+    padding: .5rem 1rem;
+    margin-bottom: 2rem;
+    border-radius: .5rem;
+    box-shadow: 0 4px 25px rgba(14,36,49,.15);
+    color: #424f57;
+    width: 100%;
+}
+.skills-html{
+    width: 80%;
+}
+.skills-css{
+    width: 60%;
+}
+.skills-js{
+    width:25%;
+}
+.skills-ui-ux{
+    width: 15%;
+}
+.bx {
+    font-family: 'boxicons'!important;
+    font-weight: normal;
+    font-style: normal;
+    font-variant: normal;
+    line-height: 1;
+    display: inline-block;
+    text-transform: none;
+    speak: none;
+}
+
+.bxl-html:before {
+    content: "\e92e";
+}
+.bxl-css:before {
+    content: "\e912";
+}
+.bxl-js:before {
+    content: "\e934";
+}
+.bxl-ui-ux:before {
+    content: "\ee10";
+}
+.skills-names{
+    display: flex;
+}
+.skills-icon {
+    font-size: 2rem;
+    margin-right: 1rem;
+    color: #4070F4;
+}
+.skills-bar{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-color: #4070F4;
+    height: .25rem;
+    border-radius: .5rem;
+    z-index: -10;
+}
+.skill img{
+    max-width: 80%;
+    height: 350;
+    border-radius: 10px;
+    margin-top: 100px;
+}
+
+/*work section start*/
+.work-section{
+    width: 100%;
+    overflow: hidden;
+    text-align: center;
+    padding-top: 100px;
+}
+.bd-grid{
+    display:grid;
+    grid-template-columns: auto auto auto;  
+}
+.work-img{
+    box-shadow: 0 4px 25px rgba(14,36,49,.15);
+    border-radius: .5rem;
+    position: relative;
+    height: 250px;
+    margin: 20px;
+    overflow: hidden;
+}
+.work-img img{
+    width: 100%;
+    height:250px;
+    display: block;
+    transition:1s;
+    cursor: pointer;
+}
+.work-img:hover img{
+    transform: scale(1.1);
+}
+.overlay{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(14,36,49,.5);
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  transition: 1s;
+}
+.text{
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index:1;
+}
+.text p{
+    margin: 0px;
+}
+.text h3::before{
+    content: " ";
+    display: block;
+    width: 50%;
+    position: relative;
+    top: 35px;
+    left: 25%;
+    bottom: 0px;
+    height: 1px;
+    background-color: whitesmoke;
+}
+.work-img:hover .overlay{
+    background-color: rgba(14,36,49,.9);
+}
+.btn{
+    display: flex;
+}
+.visit,.code{
+    width: 140px;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 10px;
+    color: white;
+    margin: 15px;
+    text-transform: capitalize;
+    font-family: 'Poppins',sans-serif;
+    background-color: transparent;
+    transition: 0.3s ease-in;
+    outline: 0;
+    border:0.1px solid white;
+    cursor: pointer;
+    border-radius: 10px;
+}
+.visit:hover,.code:hover{
+background-color: white;
+color: #102430;
+}
+/*contact section css*/
+
+.contact-section{
+    text-align: center;
+}
+.contact__input {
+    width: 100%;
+    font-size: 15px;
+    font-weight: 700;
+    padding: 1rem;
+    border-radius: .5rem;
+    border: 1.5px solid #0E2431;
+    outline: none;
+    margin-bottom: 2rem;
+}
+
+.contact-section form{
+    width: 360px;
+}
+.bd-grid1{
+    margin-top: 4rem;
+    width: calc(100% - 2rem);
+}
+.contact-form{
+    margin: 0 auto;
+}
+.button{
+    width: 340px;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 10px;
+    color: white;
+    text-transform: capitalize;
+    font-family: 'Poppins',sans-serif;
+    background-color: #4070F4;
+    outline: 0;
+    border: 0.1px solid white;
+    cursor: pointer;
+    border-radius: 10px;
+}
+.button:hover{
+    box-shadow: 0 10px 36px rgba(0,0,0,.15);
+}
+.footer{
+    width: 100%;
+    padding: 1rem 0;
+    background-color: #0E2431;
+    height:150px;
+    margin-top: 3rem;
+    text-align: center;
+    color: white;
+}
+.footer-social{
+    display: block;
+}
+.footer h3{
+    font-family: 'Comfortaa'
+}
+.footer-social i{
+    font-size: 1.5rem;
+    color: #fff;
+    margin:10px;
+}
+.headline{
+    margin-bottom: 15px;
+    font-weight: 600;
+    color: #0E2431;
+}
+
+
+/*Media Queries*/
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+.nav{
+    display: none;
+}
+
+}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .nav{
+        display: block;
+    }
+}
+    </style>
+     
+</head>
+<body>
+    <div class="header">
+        <div class="container">
+        <a href=""><span class="brand-name">SHASHI KUMAR</span></a> 
+        <div class="nav">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">about</a></li>
+                <li><a href="#skill">skills</a></li>
+                <li><a href="#work">work</a></li>
+                <li><a href="#contact">contact</a></li>
+            </ul>
+        </div>
+        </div>
+    </div>
+    <div class="main-banner" id="home">
+        <div class="container">
+            <div class="intro">
+                <p>Hi,<br> i'am <span>Shashi Kumar</span><br>Full-staclk Web Developer..</p>
+                <a href="#contact"><button class="contact-btn"  >Tab to contact</button></a>
+                <div class="social"  >
+                    <a href="https://www.linkedin.com/in/shashi-kumar-dasari-526a951a0/" target="_blank"><img src="https://raw.githubusercontent.com/sanbiradi/Profile-Portfolio/dd9926d00997c970d978c51fa8486f93c6e41150/assets/linkedin.png" alt="linkedin" ></a>
+                    <a href="https://github.com/shashikumar55511" target="_blank"><img src="https://raw.githubusercontent.com/sanbiradi/Profile-Portfolio/dd9926d00997c970d978c51fa8486f93c6e41150/assets/github.png" alt="github" ></a>
+                    <a href="www.instagram.com" target="_blank"><img src="https://raw.githubusercontent.com/sanbiradi/Profile-Portfolio/dd9926d00997c970d978c51fa8486f93c6e41150/assets/facebook.png" alt="Face book" ></a>
+                    <a href="www.facebook.com" target="_blank"><img src="https://raw.githubusercontent.com/sanbiradi/Profile-Portfolio/dd9926d00997c970d978c51fa8486f93c6e41150/assets/instagram.png" alt="linkedin" ></a>
+                    
+                </div>
+            </div>
+            <div class="clear"></div>
+                <img src="https://peerbits-wpengine.netdna-ssl.com/wp-content/uploads/2018/06/full-stack-development-main.jpg" alt="" class="me">            
+        </div>
+    </div>
+    <div class="main-about" id="about">
+    <span class="section-title">about</span><br>
+    <div class="container">
+        <div class="about">
+            <div class="col-left">
+                <img src="https://scontent.fhyd11-3.fna.fbcdn.net/v/t1.6435-9/51206982_167981524177858_2433588298808033280_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=174925&_nc_ohc=9UYmAelQFl8AX95nk8r&_nc_ht=scontent.fhyd11-3.fna&oh=00_AT8OtVciYgUFLokyq-1tcOxwbRdLOYD2wFZbnFV7Y5JqkQ&oe=62EEC30B" alt="">
+            </div>
+            <div class="col-right">
+                <span class="intro-name">Dasari shashi kumar</span>
+                <p>
+               <b>From Warangal District,Telangana.</b> 
+               <br>Graduated from Ganapathi Engineering College 
+                <br>Branch-COMPUTER SCIENCE & TECHNOLOGY
+                <br><br>I'm open to work<br>
+                I like to study new technologies 
+                </p>
+            </div>
+        </div>
+    </div>
+        
+    </div>
+    <div class="skill-section" id="skill">
+        <span class="section-title">skills</span><br> 
+        <div class="container">
+            <div class="skill">
+                <div class="col-left">
+                    <span class="intro-name1">Profesional Skills</span>
+                    <p>
+                            Programming Languages : C, C++.java
+                           <br> Other skills:Testing, MS Office,Excel.
+                           <br> Operating system : Windows.
+                    </p>
+                    <!--html skills-bar-->
+                    <div class="skills-data">
+                        <div class="skills-names">
+                            <i class="bx skills-icon bxl-html"></i>
+                            <span class="skills-name">C</span>
+                        </div>
+
+                        <div class="skills-bar skills-html"></div>
+                        <div>
+                            <span class="skills-percentage">85%</span>
+                        </div>
+                    </div>
+                    <!--css skills-bar-->
+                    <div class="skills-data">
+                        <div class="skills-names">
+                            <i class="bx skills-icon bxl-css"></i>
+                            <span class="skills-name">JAVA</span>
+                        </div>
+
+                        <div class="skills-bar skills-css"></div>
+                        <div>
+                            <span class="skills-percentage">80%</span>
+                        </div>
+                    </div>
+                    <!--js skills-bar-->
+                    <div class="skills-data">
+                        <div class="skills-names">
+                            <i class="bx skills-icon bxl-js"></i>
+                            <span class="skills-name">HTML</span>
+                        </div>
+
+                        <div class="skills-bar skills-js"></div>
+                        <div>
+                            <span class="skills-percentage">75%</span>
+                        </div>
+                    </div>
+                    <!--ui-ux skills-bar-->
+                    <div class="skills-data">
+                        <div class="skills-names">
+                            <i class="bx skills-icon bxl-ui-ux"></i>
+                            <span class="skills-name">css</span>
+                        </div>
+
+                        <div class="skills-bar skills-ui-ux"></div>
+                        <div>
+                            <span class="skills-percentage">50%</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-right">
+                    
+                    <div class="container">
+                        <img src="https://www.itprotoday.com/sites/itprotoday.com/files/styles/article_featured_retina/public/Programmer%20writing%20code%20looking%20at%20monitors.jpg?itok=KxjIPmaP" alt="working...">
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="work-section" id="work">
+        <span class="section-title">work</span><br> 
+            <div class="work">
+
+                <div class="container bd-grid">
+                    
+                    <div class="work-img">
+                        <img src="assets/carservices.png" alt="work">
+                        <div class="text">
+                            <h3>Carservices</h3>
+                            <p>Website on carservices</p>
+                            <div class="btn">
+                                <a href="https://sanbiradi.github.io/carservices/" target="_blank"><button class="visit">Visit</button></a> 
+                                <a href="https://github.com/sanbiradi/carservices" target="_blank"><button class="code">code</button></a>
+                            </div>
+                        </div>
+                        <div class="overlay"></div>
+                    </div>
+                    <div class="work-img">
+                        <img src="assets/icefood.png" alt="work">
+                        <div class="text">
+                            <h3>Icefood shop ui</h3>
+                            <p>Buy some iceCream</p>
+                            <div class="btn">
+                                <a href="https://sanbiradi.github.io/icefood/" target="_blank"><button class="visit">Visit</button></a> 
+                                <a href="https://github.com/sanbiradi/icefood" target="_blank"><button class="code">code</button></a>
+                            </div>
+                        </div>
+                        <div class="overlay"></div>
+                    </div>
+                    <div class="work-img">
+                        <img src="assets/todo.png" alt="work">
+                        <div class="text">
+                            <h3>Todo app</h3>
+                            <p>Managing tasks in local storage</p>
+                            <div class="btn">
+                                <a href="https://sanbiradi.github.io/Todo-app/" target="_blank"><button class="visit">Visit</button></a> 
+                                <a href="https://github.com/sanbiradi/Todo-app" target="_blank"><button class="code">code</button></a>
+                            </div>
+                        </div>
+                        <div class="overlay"></div>
+                    </div>
+                    <div class="work-img">
+                        <img src="assets/matchgame.png" alt="work">
+                        <div class="text">
+                            <h3>The Matching Game</h3>
+                            <p>Image matching game</p>
+                            <div class="btn">
+                                <a href="https://sanbiradi.github.io/Matching-Game/" target="_blank"><button class="visit">Visit</button></a> 
+                                <a href="https://github.com/sanbiradi/Matching-Game" target="_blank"><button class="code">code</button></a>
+                            </div>
+                        </div>
+                        <div class="overlay"></div>
+                    </div>
+                    
+                    <div class="work-img">
+                        <img src="assets/liveserver.png" alt="work">
+                        <div class="text">
+                            <h3>Website code runner</h3>
+                            <p>The HTML document reader</p>
+                            <div class="btn">
+                              <a href="https://sanbiradi.github.io/liveserver/" target="_blank"><button class="visit">Visit</button></a> 
+                              <a href="https://github.com/sanbiradi/liveserver" target="_blank"><button class="code">code</button></a>
+                            </div>
+                        </div>
+                        <div class="overlay"></div>
+                    </div>                
+                    <div class="work-img">
+                        <img src="assets/quotemachine.png" alt="work">
+                        <div class="text">
+                            <h3>The QuoteMachine</h3>
+                            <p>Generating the quotes in one click</p>
+                            <div class="btn">
+                                <a href="https://sanbiradi.github.io/quotemachine/" target="_blank"><button class="visit">Visit</button></a> 
+                              <a href="https://github.com/sanbiradi/quotemachine" target="_blank"><button class="code">code</button></a>
+                            </div>
+                        </div>
+                        <div class="overlay"></div>
+                    </div>
+                    
+                </div>
+          </div>
+    </div>
+
+    <div class="contact-section" id="contact">
+        <span class="section-title">Contact</span><br>  
+        <div class="bd-grid1">
+            
+            <form action="" class="contact-form" method="GET">
+                <span class="headline">Lets connect together...</span>
+                <input type="text" placeholder="Name" class="contact__input" required>
+                <input type="email" placeholder="Email" class="contact__input" required>
+                <textarea name="" placeholder="Message" id="" cols="0" rows="10" class="contact__input"></textarea>
+                <input type="submit" value="TAP ME TO CONNECT" class="contact__button button">
+            </form>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="container">
+            <h3>Shashi kumar</h3>
+            <div class="footer-social">
+                <a href="https://facebook.com" target="_blank"><i class="bx bxl-facebook"></i></a>
+                <a href="https://instagram.com" target="_blank"><i class="bx bxl-instagram"></i></a>
+                <a href="https://twitter.com" target="_blank"><i class="bx bxl-twitter"></i></a>
+            </div>
+            <p>Thank You Visit my page again ...Bye  Bye..!! 
+            </p>
+
+        </div>
+    </div>
+</body>
+</html>
