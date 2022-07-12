@@ -22,7 +22,7 @@ html{
 .header{
     width: 100%;
     height: auto;
-    background-color:rgb(124, 159, 130); 
+    background-color:aliceblue; 
     box-shadow:0 10px 4px rgba(69, 81, 94, 0.15);
     overflow: hidden;
     position: fixed;
